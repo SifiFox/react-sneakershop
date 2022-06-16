@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-function Drawer() {
+function Drawer(props) {
         return (
-            <div style={{display: 'none'}} className="overlay">
+            <div  className="overlay">
                 <div className="drawer">
-                    <h2 className="mb-30 d-flex justify-between">Корзина<img src="/img/btn-remove.svg" alt="Remove" className="btn-remove  cu-p"/></h2>
+                    <h2 className="mb-30 d-flex justify-between">Корзина<img src="/img/btn-remove.svg" alt="Remove" className="btn-remove  cu-p" onClick={props.onClose}/></h2>
 
                     <div className="items">
 
